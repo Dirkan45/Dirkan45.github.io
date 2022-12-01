@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="author" content="Sichao Kan">
+        <title>Survey</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
+        <script src="script/form.js"></script>
+    </head>
+
+    <body>
+		<header id="top">
+			<h1>World Cup <br>Survey</h1>					
+		</header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="page2_SKa09472.html">World Cup Survey</a></li>
+                <li><a href="page3_Ska09472.html">World Cup Game</a></li>
+            </ul>
+        </nav>
+        <section>
+            <form name="myform" action='' method="get">
+                <fieldset>
+                    <legend>World Cup Survey</legend>
+                    <div>
+                        <label for="firstName">Name</label>
+                        <input type="text" name="firstName" id="firstName" 
+                            placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <label for="email">Douglas Email</label>
+                        <input type="email" name="email" id="email" pattern="[a-z0-9]+@student.douglascollege.ca" placeholder="abc@student.douglascollege.ca" required>
+                    </div>
+                    <div> 
+                        <label for="age">Age</label>
+                        <span>
+                            <select name="age" id="age" required>
+                                <option value="">Please select one option</option>
+                                <option value="<=20" required>Below 20</option>
+                                <option value="20-30" required>20 - 30</option>
+                                <option value="30-40" required>30 - 40</option>
+                                <option value=">40" required>Above 40</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div id="image">
+                        <label for="image">Where are your going to watch the game</label>                    
+                        <span id="radio_button">
+                            <span><input type="radio" name="image" id="image1"  value="images\soccer-3496510_1280.jpg">At Home!</span>
+                            <span><input type="radio" name="image" id="image2"  value="images\bar-209148_1280.jpg">At Bar!</span>
+                            <span><input type="radio" name="image" id="image3"  value="images\crowd-1283691_1280.jpg">At Qatar!</span>
+                        </span>                    
+                    </div>
+                    <div>
+                        <label for="message">Say Something to your supporting team</label>
+                        <textarea name="message" rows="5">Go Canada!</textarea>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit_input" value="Submit Input" onclick="return runValidate(this.form)">
+                        <input type="reset" name="reset" value="Clear Input">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Message</legend>
+                    
+                    <div>
+                        <p id="text_target">
+                        </p>
+                    </div>
+                    <div id="image_target">                    
+                        <img src="" id="image_src" alt="">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+        <section id="references">
+            <h4>References</h4>
+            <ul>
+                <li>
+                    The background image is taken from <a target="_blank" href='https://pixabay.com/illustrations/lawn-football-soccer-grass-game-1335365/'> Pixabay</a>
+                </li>
+                <li>
+                    The header image is taken from <a target="_blank" href='https://pixabay.com/illustrations/soccer-world-championship-world-cup-7594708/'> Pixabay</a>
+                </li>
+            </ul>
+            
+            <p><small>Back to <a href="#top">top</a></small></p>
+        </section>
+		<footer>
+			<small><em>CSIS 1280 &copy; Sichao Kan Fall 2022</em></small>
+		</footer>
+    </body>
+
+</html>	

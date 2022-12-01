@@ -1,0 +1,79 @@
+
+form {
+    display:flex;
+    flex-flow: row wrap;                
+}
+
+form > fieldset{
+    flex:1 1 auto;
+}
+div{
+    display:flex;
+    flex-flow: row wrap;                
+}
+div>label, div>p{
+    flex: 1 1 100px;
+    margin: 10px 10px;                
+}
+div>span, div>input, div>select, div>img{
+    flex: 1 1 auto;
+    margin: 10px 10px;                
+}
+fieldset > div > *{
+    flex: 1 1 200px;
+}
+legend{
+    background-color: wheat;
+    padding: 8px;
+    border-radius: 0.5em;
+    color:maroon;
+}
+
+#check{
+    columns: 1;
+}
+
+img{
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div#image_style, div#image_target{
+    visibility:hidden;
+}
+
+span#button{
+    columns: 1;
+}
+
+
+
+
+@media only screen and (max-width: 599px){
+    fieldset{
+        width: 98%;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 600px){
+    fieldset{
+        width: 35%;
+    }
+} 
+
+/* desktop */
+@media only screen and (min-width: 800px){
+    fieldset{
+        width: 98%;
+    }
+}
+
+/* wide screen */
+@media only screen and (min-width: 1201px){
+    fieldset{
+        width: 50%;
+    }
+}
